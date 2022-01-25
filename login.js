@@ -26,6 +26,7 @@ app.get('/', function(request, response) {
 });
 
 app.post('/auth', function(request, response) {
+	var fullname = request.body.fullname;
 	var username = request.body.username;
 	var password = request.body.password;
 	if (username && password) {
